@@ -1,0 +1,13 @@
+@RedisAsPrimaryDatabase_HostAddress = https://localhost:5050
+
+GET {{RedisAsPrimaryDatabase_HostAddress}}/api/Platform
+Accept: application/json
+
+###
+
+POST {{RedisAsPrimaryDatabase_HostAddress}}/api/Platform
+Content-Type: application/json
+
+{
+    "name": "Test Platfrom"
+}
